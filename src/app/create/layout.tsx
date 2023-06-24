@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 export const metadata = {
-  title: "Create - Interview Prepper",
+  title: "Create",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

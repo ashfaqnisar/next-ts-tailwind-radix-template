@@ -36,7 +36,14 @@ export function MainNav({ items }: MainNavProps) {
           </SheetTrigger>
           <SheetContent side={"left"} className="w-[335px] sm:w-[540px]">
             <SheetHeader className={"mb-4"}>
-              <SheetTitle>{siteConfig.shortName}</SheetTitle>
+              <SheetTitle asChild>
+                <div className={"flex items-center gap-2"}>
+                  <Icons.graduation className="h-6 w-6" />
+                  <span className={"inline-block font-bold"}>
+                    {siteConfig.shortName}
+                  </span>
+                </div>
+              </SheetTitle>
             </SheetHeader>
             {items?.length && (
               <div className={"flex flex-col gap-2"}>
@@ -63,7 +70,7 @@ export function MainNav({ items }: MainNavProps) {
         </Sheet>
       </div>
       <Link href="/" className="flex items-center space-x-2">
-        <Icons.logo className="h-6 w-6" />
+        <Icons.graduation className="h-6 w-6" />
         <span className="inline-block font-bold">{siteConfig.shortName}</span>
       </Link>
       <div className="hidden sm:block">

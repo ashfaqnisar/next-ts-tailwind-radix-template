@@ -1,10 +1,10 @@
 export type SiteConfig = typeof siteConfig;
 
 export const siteConfig = {
-  name: "Next.js",
-  shortName: "Next-JS",
+  name: "Interview Prepper",
+  shortName: "IN-PREP",
   description:
-    "Beautifully designed components built with Radix UI and Tailwind CSS.",
+    "Interview Prepper is a open source tool to help you prepare for your next interview.",
   mainNav: [
     {
       title: "Home",
