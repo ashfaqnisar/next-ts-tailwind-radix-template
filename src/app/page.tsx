@@ -56,7 +56,7 @@ export default function IndexPage() {
       </div>
       <div className="flex gap-4">
         <Link
-          href={siteConfig.links.docs}
+          href={"https://radix-ui.com/primitives/docs/components/alert-dialog"}
           target="_blank"
           rel="noreferrer"
           className={buttonVariants()}
